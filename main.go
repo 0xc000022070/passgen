@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/luisnquin/passgen/password"
+	"github.com/0xc000022070/passgen/password"
 )
 
 func main() {
