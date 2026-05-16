@@ -13,7 +13,7 @@
     eachSystem = lib.genAttrs (import systems);
   in {
     overlays.default = final: prev: {
-      passgen = self.packages.${prev.system}.passgen;
+      passgen = self.packages.${final.stdenv.hostPlatform.system}.passgen;
     };
 
     overlay = self.overlays.default;
